@@ -12,8 +12,9 @@ abstract class Model{
 
 	public function __construct(){
 
-		// var_dump($this->table);
-		$this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+		if($this->dbh == NULL){
+			$this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+		}
 	}
 
 	public  function getAll(){

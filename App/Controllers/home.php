@@ -3,17 +3,18 @@ namespace App\Controllers;
 
 use Core\Controller;
 use App\Models\User;
-
+use Core\View;
 
 class Home extends Controller {
 
 	protected function index() {
 		
-		$user = new User;
-		// var_dump(get_class($user);
-		// die();
-		$results = $user->getAll();
-		print_r($results);
+
+		View::renderTemplate('Home/index.php',
+			[
+				'Param_1' => 'Twig',
+				'Param_2' => 'Template'
+		]);
 	}
 
 
