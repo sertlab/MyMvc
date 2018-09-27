@@ -7,5 +7,8 @@ define("DB_PASS", "");
 define("DB_NAME", "serdelab");
 
 // URL
-define("ROOT_PATH", "/");
+define("ROOT_PATH", "http://localhost/serdelab");
 define("ROOT_URL", "http://localhost");
+
+
+define("ROOT_FOLDER","serdelab");

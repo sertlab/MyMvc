@@ -2,6 +2,9 @@
 
 namespace Core;
 
+use Core\View;
+
+
 class Bootstrap {
 
 	private $controller;
@@ -43,12 +46,12 @@ class Bootstrap {
 			if(method_exists($controller_object, $this->action)){
 				return new $controller_object($this->action);
 			}else{
-				echo 'Method Does Not Exist';
+				View::renderTemplate('404.php');
 				return;
 			}
 
 		} else {
-			echo 'Controller Class Does Not Exist';
+			View::renderTemplate('404.php');
 			return;
 		}
 

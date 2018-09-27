@@ -5,8 +5,10 @@
 	<title>SerDelab Home Page</title>
 </head>
 <body>
-	<h1>Welcome to Home Page</h1>
+	<h1>Welcome to SerDelab MVC Framework</h1>
 
-	<p>{{name}}</p>
+	<a href="signup">SignUp</a>
+
+
 </body>
 </html>

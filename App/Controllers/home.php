@@ -10,11 +10,7 @@ class Home extends Controller {
 	protected function index() {
 		
 
-		View::renderTemplate('Home/index.php',
-			[
-				'Param_1' => 'Twig',
-				'Param_2' => 'Template'
-		]);
+		View::renderTemplate('Home/index.php');
 	}
 
 
